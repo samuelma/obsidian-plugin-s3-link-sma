@@ -4,6 +4,7 @@ const moduleName = "Settings";
 
 export interface PluginSettings {
     bucketName: string;
+    endpoint: string;
     region: string;
     accessKeyId: string;
     secretAccessKey: string;
@@ -12,7 +13,8 @@ export interface PluginSettings {
 
 export const DEFAULT_SETTINGS: Partial<PluginSettings> = {
     bucketName: "",
-    region: "eu-central-1",
+    endpoint: "",
+    region: "",
     accessKeyId: "",
     secretAccessKey: "",
     profile: "",

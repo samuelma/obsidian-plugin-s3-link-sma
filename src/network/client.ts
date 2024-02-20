@@ -41,6 +41,7 @@ export class Client {
 
                 if (credentials) {
                     this.s3Client = new S3Client({
+                        endpoint: this.settings.endpoint,
                         region: this.settings.region,
                         credentials: {
                             accessKeyId: credentials.accessKeyId,
